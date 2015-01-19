@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions> 
+
+    <definition name="${YOUR_DEFINITION_HERE}">
+    </definition>
+
+    <definition name="Login" path="/baseLayout.jsp">
+        <put name="header" value="/header.jsp" />
+        <put name="body"   value="/LoginTile.jsp" />        
+    </definition>
+    
+    <definition name="Home" extends="Login">
+        <put name="navbar" value="/Navbar.jsp" />
+        <put name="body" value="/HomeTile.jsp" />
+    </definition>
+    
+    <definition name="Hotel" extends="Home">
+       <put name="body" value="/HotelTile.jsp" />
+    </definition>
+    
+    <definition name="Favourites" extends="Home">
+       <put name="body" value="/FavouriteTile.jsp" />
+    </definition>
+    
+      <definition name="Booking" extends="Home">
+       <put name="body" value="/BookingTile.jsp" />
+    </definition>
+    
+</tiles-definitions>

@@ -1,0 +1,34 @@
+@font-face {
+    font-family: myFont;
+    src: url("../fonts/Tua_Typeface.ttf");
+}
+
+
+.Login_form_body{
+		background-image: url("../images/background.jpg"); 
+	 	background-repeat:no-repeat;
+	 	background-size:100% 100%;
+	 	overflow:hidden;
+	 	margin-top:5px;
+	 	padding-top:100px;
+	 	margin-left:3px;
+	 	margin-right:3px;
+	 	padding-bottom:100px;
+	 	border:yellow 4px solid;
+}
+
+h1{
+	font-family:Florence;
+	text-align:center;
+	color:white;
+}
+
+.submit_button{
+	font-family:Florence;
+	background-color:yellow;
+}
+
+.clear_button{
+	font-family:Florence;
+	margin-left:5px;	
+}
